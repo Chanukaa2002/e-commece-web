@@ -45,7 +45,7 @@
 
     $conn = mysqli_connect("localhost", "chanuka", "Chanuka@20021004");
     mysqli_select_db($conn,"orderdb");
-    $query = "SELECT Name,Price from tblproducts";
+    $query = "SELECT * from tblproducts";
     $result = mysqli_query($conn, $query);
 
     echo"<div class=container>";
@@ -53,8 +53,11 @@
     while($row = mysqli_fetch_array($result)){
         echo"<div class=product>";
         echo "<div class='product-info'>";
-        echo "<lable class=info>Name:     ".$row[0]."</lable><br>";
-        echo "<lable class=info>Price:    ".$row[1]."$</lable><br>";
+        echo "<div class=i><img width=250px class=imge src = 'images/".$row[3]."'></div>";
+        echo "<div style=>";
+        echo "<lable class=info>Name:     ".$row[1]."</lable><br>";
+        echo "<lable class=info>Price:    ".$row[2]."$</lable><br>";
+        echo "</div>";
         echo"</div>";
         echo"</div>";
     }

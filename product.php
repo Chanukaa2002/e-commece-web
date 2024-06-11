@@ -85,7 +85,7 @@ if (isset($_POST["btnSave"])) {
     if ($query->execute()) {
         $path = "images/" . $img;
         if (move_uploaded_file($temp, $path)) {
-            echo "Product saved successfully!";
+            echo "<script> alert(Product saved successfully!) </script>";
         } else {
             echo "Failed to upload image!";
         }
