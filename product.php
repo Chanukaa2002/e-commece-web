@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#"><img src="online-shop.png" style="height:45px;width:45px; margin-bottom:15px"></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -41,7 +41,7 @@
         <div class="registration-form">
             <form action="" method="post" enctype="multipart/form-data">
                 <div class="form-icon" >
-                    <span><i class="icon icon-user"></i></span>
+                    <span><i class="icon icon-user" ><img src="in-stock.png" style="height:45px;width:75px; margin-bottom:15px"></i></span>
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control item" id="username" name="pId" placeholder="Product ID">
